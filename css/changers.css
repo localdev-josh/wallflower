@@ -1,0 +1,39 @@
+/* .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 70%;
+}
+
+.item {
+    margin: auto;
+}
+
+.item1 {
+    margin-right: auto;
+} */
+.main {
+    margin: 20px auto;
+}
+
+
+@media(min-width: 769px) {
+
+    .main {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .main-nav {
+        display: flex;
+    }
+
+}
+
+@media(min-width: 1025px) {
+    .main {
+        display: flex;
+        justify-content: space-between;
+    }
+}

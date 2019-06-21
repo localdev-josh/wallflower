@@ -1,0 +1,564 @@
+@import url('https://fonts.googleapis.com/css?family=Questrial');
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    height: 100%;
+    width: 100%;
+    color: #777777;
+    background-color: #fff;
+}
+
+html {
+    box-sizing: border-box;
+    margin-right: 0px !important;
+    overflow: visible !important;
+}
+
+body {
+    overflow-x: hidden;
+    overflow-y: scroll;
+    box-sizing: border-box;
+}
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+font,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td {
+    border: 0;
+    margin: 0;
+    outline: 0;
+    padding: 0;
+    vertical-align: baseline;
+}
+
+article,
+aside,
+details,
+figcaption,
+footer,
+header,
+hgroup,
+nav,
+section {
+    display: block;
+}
+
+header {
+    -webkit-transition: all 0.3s ease-in-out, opacity 0.3s ease-in-out 0.2s;
+    -moz-transition: all 0.3s ease-in-out, opacity 0.3s ease-in-out 0.2s;
+    -o-transition: all 0.3s ease-in-out, opacity 0.3s ease-in-out 0.2s;
+    transition: all 0.3s ease-in-out, opacity 0.3s ease-in-out 0.2s;
+    opacity: 1;
+    margin: 0 auto;
+    height: 100%;
+    position: fixed;
+    width: 100px;
+    z-index: 250;
+    box-sizing: border-box;
+    left: 0;
+    background-color: #fff;
+    overflow: hidden;
+    top: 0;
+    border-right: 1px solid #fff;
+}
+
+#header-container {
+    width: 100px;
+    margin: 0 auto;
+    box-sizing: border-box;
+    padding: 0;
+    height: 100%;
+    position: absolute;
+    z-index: 20;
+    left: 0;
+    /* display: flex; */
+    /* background: #000; */
+}
+
+#header-title {
+    font-family: "Montserrat", sans-serif;
+    font-size: 10px;
+    font-weight: 400;
+    letter-spacing: 3px;
+    color: #999;
+    text-transform: uppercase;
+    position: absolute;
+    width: 100px;
+    z-index: 2000;
+    text-align: center;
+    top: 60%;
+    left: 50%;
+    -moz-transform: translateX(-50%) translateY(-50%) rotate(-90deg);
+    -webkit-transform: translateX(-50%) translateY(-50%) rotate(-90deg);
+    transform: translateX(-50%) translateY(-50%) rotate(-90deg);
+}
+
+#header-titles {
+    font-family: "Montserrat", sans-serif;
+    font-size: 10px;
+    font-weight: 400;
+    letter-spacing: 3px;
+    color: rgb(63, 61, 61);
+    text-transform: uppercase;
+    position: absolute;
+    width: 100px;
+    z-index: 2000;
+    text-align: center;
+    top: 45%;
+    left: 50%;
+    -moz-transform: translateX(-50%) translateY(-50%) rotate(-90deg);
+    -webkit-transform: translateX(-50%) translateY(-50%) rotate(-90deg);
+    transform: translateX(-50%) translateY(-50%) rotate(-90deg);
+}
+
+.but {
+    display: block;
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    left: 20px;
+    bottom: 40px;
+    float: none;
+}
+
+.button-menu {
+    display: block;
+    position: absolute;
+    background: #000;
+    /* overflow: hidden; */
+    margin: 0;
+    padding: 0;
+    width: 60px;
+    height: 60px;
+    font-size: 0;
+    text-indent: -9999px;
+    appearance: none;
+    box-shadow: none;
+    border-radius: none;
+    border: none;
+    cursor: pointer;
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    -ms-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+    left: 20px;
+    bottom: 20px;
+    opacity: 0.5;
+    float: none;
+}
+
+.section .clapat-caption.animated {
+    opacity: 1;
+    -webkit-transform: translateY(0px);
+    -moz-transform: translateY(0px);
+    -o-transform: translateY(0px);
+    -ms-transform: translateY(0px);
+    transform: translateY(0px);
+    transition: all 0.7s ease-in-out 0.6s;
+    -webkit-transition: all 0.4s ease-in-out 0.6s;
+    -moz-transition: all 0.7s ease-in-out 0.6s;
+    -o-transition: all 0.7s ease-in-out 0.6s;
+    -ms-transition: all 0.7s ease-in-out 0.6s;
+}
+
+@media only screen and (max-width: 1466px) {
+    .section .clapat-caption {
+        padding: 80px 65px 80px 65px;
+    }
+}
+
+@media only screen and (max-width: 1600px) {
+    .section .clapat-caption {
+        padding: 100px 85px 100px 85px;
+    }
+}
+
+.section .clapat-caption {
+    display: table;
+    height: 100%;
+    position: relative;
+    width: 100%;
+    padding: 100px 95px 100px 95px;
+    opacity: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-transform: translateY(100px);
+    -moz-transform: translateY(100px);
+    -o-transform: translateY(100px);
+    -ms-transform: translateY(100px);
+    transform: translateY(100px);
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+
+.flex-active-slide .clapat-caption,
+.clapat-caption.animated {
+    opacity: 1;
+    -webkit-transform: translateY(0px);
+    -moz-transform: translateY(0px);
+    -o-transform: translateY(0px);
+    -ms-transform: translateY(0px);
+    transform: translateY(0px);
+    -webkit-transition: all 0.3s ease-in-out 1.5s;
+    -moz-transition: all 0.3s ease-in-out 1.5s;
+    -o-transition: all 0.3s ease-in-out 1.5s;
+    -ms-transition: all 0.3s ease-in-out 1.5s;
+    transition: all 0.3s ease-in-out 1.5s;
+}
+
+.clapat-caption {
+    display: table;
+    height: 100%;
+    position: relative;
+    width: 100%;
+    margin: 0 auto;
+    opacity: 0;
+    padding: 90px 95px 90px 95px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-transform: translateY(-30px);
+    -moz-transform: translateY(-30px);
+    -o-transform: translateY(-30px);
+    -ms-transform: translateY(-30px);
+    transform: translateY(-30px);
+    -webkit-transition: all 0.3s ease-in-out 2s;
+    -moz-transition: all 0.3s ease-in-out 2s;
+    -o-transition: all 0.3s ease-in-out 2s;
+    -ms-transition: all 0.3s ease-in-out 2s;
+    transition: all 0.3s ease-in-out 2s;
+}
+
+.caption-content.bottom-left {
+    text-align: left;
+    vertical-align: bottom;
+}
+
+.section .caption-content {
+    vertical-align: bottom !important;
+    padding: 0;
+    position: relative;
+    -webkit-transition: all 0.3s ease-in-out 0s;
+    -moz-transition: all 0.3s ease-in-out 0s;
+    -o-transition: all 0.3s ease-in-out 0s;
+    -ms-transition: all 0.3s ease-in-out 0s;
+    transition: all 0.3s ease-in-out 0s;
+}
+
+.caption-content {
+    display: table-cell;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0;
+    opacity: 1;
+}
+
+p.no-margins {
+    margin-bottom: 0;
+}
+
+.smaller,
+.smaller p {
+    font-family: "Montserrat", sans-serif;
+    font-size: 10px !important;
+    font-weight: 400 !important;
+    letter-spacing: 3px !important;
+    color: #777;
+    text-transform: uppercase;
+}
+
+p {
+    font-size: 15px;
+    margin-bottom: 20px;
+    line-height: 25px;
+    color: #777;
+}
+
+.title-has-line {
+    position: relative;
+    margin-bottom: 30px;
+}
+
+h1 {
+    font-size: 50px;
+    line-height: 36px;
+    margin-left: -1px;
+    font-family: 'Questrial', sans-serif;
+}
+
+.button-menu:focus {
+    outline: none;
+}
+
+.button-menu:hover {
+    opacity: 1;
+}
+
+.button-menu-rotate {
+    background-color: transparent;
+}
+
+#logo {
+    float: left;
+    position: relative;
+    z-index: 1000;
+}
+
+#logo img {
+    height: auto;
+    margin-top: 10px;
+    margin-left: 25px;
+    padding: 20px 0;
+    width: 50px;
+}
+
+img {
+    border: 0 none;
+    max-width: 100%;
+    vertical-align: middle;
+    height: auto;
+}
+
+#logo a {
+    display: block;
+}
+
+a {
+    color: #000;
+    outline: 0;
+}
+
+a {
+    text-decoration: none;
+    -webkit-transition: background-color .3s ease, border .3s ease, color .3s ease, opacity .3s ease-in-out, outline .3s ease;
+    -moz-transition: background-color .3s ease, border .3s ease, color .3s ease, opacity .3s ease-in-out, outline .3s ease;
+    -ms-transition: background-color .3s ease, border .3s ease, color .3s ease, opacity .3s ease-in-out, outline .3s ease;
+    -o-transition: background-color .3s ease, border .3s ease, color .3s ease, opacity .3s ease-in-out, outline .3s ease;
+    transition: background-color .3s ease, border .3s ease, color .3s ease, opacity .3s ease-in-out, outline .3s ease;
+}
+
+.section .overlay {
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+
+.overlay {
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+
+.section-white.first {
+    height: 0;
+}
+
+.section-white {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: 60;
+    background-color: #fff;
+    box-sizing: border-box;
+    bottom: 0px;
+    -webkit-transform: translate3d(0, 0, 0);
+    -moz-transform: translate3d(0, 0, 0);
+    -o-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+    -webkit-transition: all 1400ms cubic-bezier(0.550, 0.085, 0.000, 0.990);
+    -moz-transition: all 1400ms cubic-bezier(0.550, 0.085, 0.000, 0.990);
+    -o-transition: all 1400ms cubic-bezier(0.550, 0.085, 0.000, 0.990);
+    transition: all 1400ms cubic-bezier(0.550, 0.085, 0.000, 0.990);
+    -webkit-transition-timing-function: cubic-bezier(0.550, 0.085, 0.000, 0.990);
+    -moz-transition-timing-function: cubic-bezier(0.550, 0.085, 0.000, 0.990);
+    -o-transition-timing-function: cubic-bezier(0.550, 0.085, 0.000, 0.990);
+    transition-timing-function: cubic-bezier(0.550, 0.085, 0.000, 0.990);
+}
+
+.top-line {
+    background-color: #fff;
+    height: 20px;
+    left: 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 200;
+}
+
+.right-line {
+    background-color: #fff;
+    height: 100%;
+    position: fixed;
+    right: 0;
+    top: 0;
+    width: 20px;
+    z-index: 200;
+}
+
+.left-line {
+    background-color: #fff;
+    height: 100%;
+    left: 0;
+    position: fixed;
+    top: 0;
+    width: 20px;
+    z-index: 200;
+}
+
+.bottom-line {
+    background-color: #fff;
+    bottom: 0;
+    height: 20px;
+    left: 0;
+    position: fixed;
+    width: 100%;
+    z-index: 200;
+}
+
+.pp-tableCell {
+    display: table-cell;
+    vertical-align: middle;
+    width: 100%;
+    height: 100%;
+}
+
+.section-image,
+.responsive-section-image {
+    height: 100%;
+    position: absolute;
+    width: 100%;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+#page-content {
+    -webkit-transition: all 600ms cubic-bezier(0.86, 0, 0.07, 1);
+    -moz-transition: all 600ms cubic-bezier(0.86, 0, 0.07, 1);
+    -o-transition: all 600ms cubic-bezier(0.86, 0, 0.07, 1);
+    transition: all 600ms cubic-bezier(0.86, 0, 0.07, 1);
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    padding-left: 100px;
+    padding-right: 20px;
+    background-color: #fff;
+}
+
+#hero {
+    box-sizing: border-box;
+    position: relative;
+    z-index: 0;
+    background-color: #fff;
+    height: 100%;
+    width: 100%;
+    -webkit-transition: opacity 0.3s ease-in-out;
+    -moz-transition: opacity 0.3s ease-in-out;
+    -o-transition: opacity 0.3s ease-in-out;
+    -ms-transition: opacity 0.3s ease-in-out;
+    transition: opacity 0.3s ease-in-out;
+}
+
+#hero-styles {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    -webkit-transition: all 0s ease-in-out;
+    -moz-transition: all 0s ease-in-out;
+    -o-transition: all 0s ease-in-out;
+    -ms-transition: all 0s ease-in-out;
+    transition: all 0s ease-in-out;
+}
+
+.pagepillingslider,
+.pagepillingsliderhero {
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+
+#header-title-div {
+    display: inline-block;
+    height: 100%;
+    left: 0;
+    margin: 0;
+    position: absolute;
+    top: 0;
+    width: 100px;
+    -webkit-transition: all 0.25s ease-in-out;
+    -moz-transition: all 0.25s ease-in-out;
+    -o-transition: all 0.25s ease-in-out;
+    -ms-transition: all 0.25s ease-in-out;
+    transition: all 0.25s ease-in-out;
+}

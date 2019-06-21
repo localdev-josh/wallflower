@@ -1,0 +1,147 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 0.8em;
+    font-family: 'varela Round', sans-serif;
+    color: #fff;
+    background: #fdfdff;
+    margin: 0;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+}
+
+.main-nav {
+    margin-top: 5px;
+}
+
+
+
+.main-nav a {
+    font-size: 1.05em;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    line-height: normal;
+}
+
+.main-nav li {
+    margin-left: 30px;
+    text-align: center;
+}
+
+.grids {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.grids .item {
+    padding: 10px;
+}
+
+.grids .item2 {
+    position: relative;
+    top: 30px;
+}
+
+.update {
+    display: flex;
+    justify-content: space-between;
+    width: 838px;
+    height: 156px;
+    margin: 40px auto;
+    background: #e8e8e9;
+    flex-grow: 2;
+}
+
+.items {
+    margin: 20px;
+    padding: 5px;
+}
+
+.profile {
+    width: 40px;
+    height: 40px;
+    background: #000;
+    background: url("../assets/img/josh.jpg") no-repeat;
+    background-size: cover;
+    border-radius: 50px;
+}
+
+.icons {
+    position: relative;
+    color: #000;
+    top: -5px;
+}
+
+.filter {
+    position: relative;
+    color: #000;
+    top: 3px;
+    left: 6px;
+}
+
+.main-footer {
+    padding: 2em 0;
+    margin-top: 30px;
+}
+
+.hello {
+    color: #fff;
+    background: #3acec2;
+    padding: 1.8em 0;
+    margin-bottom: 32px;
+    border-top-left-radius: 80px;
+    border-top-right-radius: 80px;
+}
+
+.img {
+    border-radius: 50%;
+
+}
+
+@media(min-width: 768px) {
+    .main {
+        width: 90%;
+        margin: 0 auto;
+    }
+}
+
+@media(min-width: 1025px) {
+    .main {
+        width: 80%;
+        max-width: 1150px;
+    }
+}
+
+/* .cover {}
+
+.container {
+    padding: 10px;
+    border-radius: 5px;
+    background: #fff;
+    margin: 10px auto;
+}
+
+.item {
+    background: #3db5da;
+    color: #fff;
+    padding: 15px;
+    margin: 5px;
+    border-radius: 5px;
+} */

@@ -1,0 +1,103 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+
+a,
+li {
+    text-decoration: none;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.contain {
+    display: block;
+    background: url("../assets/img/summer19\ -\ Copy.png") no-repeat;
+    background-size: contain;
+}
+
+.overimage {
+    height: 100vh;
+    background: url("../assets/img/val2-edit.png") no-repeat;
+    background-size: contain;
+    width: 30%;
+    margin: 70px auto;
+    text-align: center;
+    color: #fff;
+}
+
+.nav-container {
+    padding-top: .5em;
+    padding-bottom: .5em;
+}
+
+.main-nav {
+    margin-top: 5px;
+}
+
+.main-nav a {
+    text-align: center;
+    display: block;
+    padding: 10px 15px;
+}
+
+.icons {
+    position: relative;
+    color: #000;
+    top: -5px;
+}
+
+.filter {
+    position: relative;
+    color: #000;
+    top: 3px;
+    left: 6px;
+}
+
+.img {
+    border-radius: 50%;
+}
+
+@media(min-width: 768px) {
+    .nav-container {
+        width: 90%;
+        margin: 0 auto;
+    }
+}
+
+@media(min-width: 1025px) {
+    .nav-container {
+        width: 80%;
+        max-width: 1150px;
+    }
+
+
+
+}
+
+@media (max-width: 767px) {
+    .contain {
+        background: url("../assets/img/sum3.png") no-repeat;
+        background-size: contain;
+    }
+
+    .overimage {
+        opacity: 0;
+    }
+}
+
+@media(max-width: 1024px) {
+    .contain {
+        background: url("../assets/img/sum4.png") no-repeat;
+        background-size: contain;
+    }
+
+    .overimage {
+        opacity: 0;
+    }
+}
